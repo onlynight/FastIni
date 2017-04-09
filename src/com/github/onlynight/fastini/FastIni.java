@@ -1,4 +1,4 @@
-package com.github.onlynight.fastini.test;
+package com.github.onlynight.fastini;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

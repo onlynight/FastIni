@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FastIni:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FastIni_jar</output-path>
+    <root id="archive" name="FastIni.jar">
+      <element id="module-output" name="FastIni" />
+      <element id="library" level="project" name="src" />
+    </root>
+  </artifact>
+</component>

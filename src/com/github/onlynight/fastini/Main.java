@@ -1,4 +1,4 @@
-package com.github.onlynight.fastini.test;
+package com.github.onlynight.fastini;
 
 import java.io.File;
 import java.util.List;
