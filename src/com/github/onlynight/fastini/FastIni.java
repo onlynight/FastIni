@@ -172,15 +172,18 @@ public class FastIni {
             for (Field field : fields) {
                 if (!Modifier.isStatic(field.getModifiers())) {
                     for (IniDocument.KeyValue keyValue : document.getLines()) {
-                        if (keyValue.getKey() != null &&
-                                field.getName().equals(keyValue.getKey()) &&
-                                keyValue.getValue().size() > 0) {
-                            field.setAccessible(true);
-                            if (field.getType() == List.class) {
-                                field.set(instance, keyValue.getValue());
-                            } else {
-                                field.set(instance, keyValue.getValue().get(0));
+                        try {
+                            if (keyValue.getKey() != null &&
+                                    field.getName().equals(keyValue.getKey()) &&
+                                    keyValue.getValue().size() > 0) {
+                                field.setAccessible(true);
+                                if (field.getType() == List.class) {
+                                    field.set(instance, keyValue.getValue());
+                                } else {
+                                    field.set(instance, keyValue.getValue().get(0));
+                                }
                             }
+                        } catch (Exception e) {
                         }
                     }
                 }
