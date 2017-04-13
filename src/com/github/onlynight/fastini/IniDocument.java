@@ -11,12 +11,28 @@ import java.util.List;
  */
 public class IniDocument {
 
+    /**
+     * comment ignore start
+     */
     private static final String IGNORE_COMMENTS_START = "#";
+
+    /**
+     * group tag start
+     */
     private static final String IGNORE_TAG_START = "[";
 
+    /**
+     * document path
+     */
     private String path;
 
+    /**
+     * the document source line string
+     */
     private List<String> srcLines;
+    /**
+     * the document lines
+     */
     private List<KeyValue> lines;
 
     public IniDocument(String path) {
@@ -25,15 +41,45 @@ public class IniDocument {
         lines = new ArrayList<>();
     }
 
+    /**
+     * get all source lines
+     *
+     * @return source lines
+     */
     public List<String> getSrcLines() {
         return srcLines;
     }
 
+    /**
+     * get all parsed lines
+     *
+     * @return all parsed lines
+     */
     public List<KeyValue> getLines() {
         return lines;
     }
 
-    public void parse() {
+    /**
+     * get keyvalue by key
+     *
+     * @param key the config key
+     * @return value
+     */
+    public List<String> get(String key) {
+        for (KeyValue keyValue : lines) {
+            if (keyValue.getKey().equals(key)) {
+                return keyValue.getValue();
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * parse document.
+     * after create {@link IniDocument} you should call {@link this#parse()} method to parse the document.
+     */
+    public IniDocument parse() {
         try {
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(new FileInputStream(new File(path)), "utf-8"));
@@ -44,9 +90,6 @@ public class IniDocument {
             reader.close();
 
             for (String srcLine : srcLines) {
-                KeyValue tempLine = new KeyValue();
-                tempLine.setLine(srcLine);
-
                 // 过滤多行注释，单行
                 if (srcLine.contains(IGNORE_COMMENTS_START)) {
                     continue;
@@ -60,6 +103,8 @@ public class IniDocument {
                 // 识别关键行, pattern1
                 if (srcLine.contains("=") &&
                         !srcLine.startsWith(IGNORE_COMMENTS_START)) {
+                    KeyValue tempLine = new KeyValue();
+                    tempLine.setLine(srcLine);
                     String temp = srcLine.replace(" ", "");
                     String[] data = temp.split("=");
                     if (data.length > 0) {
@@ -70,14 +115,19 @@ public class IniDocument {
                         String[] values = data[1].split(",");
                         tempLine.setValue(Arrays.asList(values));
                     }
+                    lines.add(tempLine);
                 }
-                lines.add(tempLine);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        return this;
     }
 
+    /**
+     * line key value class to save the parsed document data model.
+     */
     public static class KeyValue {
         private String key;
         private List<String> value;
