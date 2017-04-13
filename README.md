@@ -5,6 +5,8 @@ FastIni
 
 The latest version is 1.0.0, fixed all bugs and IniDocument support #get(String key) method to get the sigle key values.
 
+[download latest 1.0.0 version jar lib file](./bin/fastini-1.0.0.jar)
+
 # Introduction
 
 This is a *.ini file parser java tools. It will help you parse .ini file quickly such as google's Gson.
