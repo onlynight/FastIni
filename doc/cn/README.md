@@ -207,8 +207,8 @@ IniDocument.java 这个类主要负责解析和存储ini文件键值对，关键
 
 ```java
 /**
- * parse document.
- * after create {@link IniDocument} you should call {@link this#parse()} method to parse the document.
+ *fromPath
+ * after create {@link IniDocument} you should call {@link this#parse()}fromPath
  */
 public IniDocument parse() {
     try {
@@ -263,7 +263,7 @@ public IniDocument parse() {
 
 ```java
 /**
- * parse *.ini file from path
+ *fromPath
  *
  * @param path  *.ini file path
  * @param clazz the class model you defined to receive the ini file config key values.

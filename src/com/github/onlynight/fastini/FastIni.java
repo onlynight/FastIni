@@ -1,6 +1,7 @@
 package com.github.onlynight.fastini;
 
 import java.io.File;
+import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.List;
@@ -116,18 +117,21 @@ public class Main {
 public class FastIni {
 
 //    public static void main(String[] args) {
-//        IniDocument document = new IniDocument(new File(new File("").getAbsoluteFile(),
-//                "translate_config.ini").getAbsolutePath()).parse();
-//        List<String> languages = document.get("destination_language");
+//        String filePath = new File(new File("").getAbsoluteFile(),
+//                "translate_config.ini").getAbsolutePath();
+//        IniDocument document = new IniDocument().fromPath(filePath);
+//        List<String> languages = document.get("destinationLanguage");
 //        if (languages != null) {
 //            for (String lang : languages) {
 //                System.out.println(lang);
 //            }
 //        }
+//
+//        System.out.println(document.get("appKey").get(0));
 //    }
 
     /**
-     * parse *.ini file from path
+     * fromPath *.ini file from path
      *
      * @param path  *.ini file path
      * @param clazz the class model you defined to receive the ini file config key values.
@@ -135,7 +139,19 @@ public class FastIni {
      * @return the data you pass in class instance.
      */
     public <T> T fromPath(String path, Class<T> clazz) {
-        return fromDocument(new IniDocument(path).parse(), clazz);
+        return fromDocument(new IniDocument().fromPath(path), clazz);
+    }
+
+    public <T> T fromStream(InputStream inputStream, Class<T> clazz) {
+        return fromDocument(new IniDocument().fromStream(inputStream), clazz);
+    }
+
+    public List<IniDocument.KeyValue> fromPath(String path) {
+        return new IniDocument().fromPath(path).getLines();
+    }
+
+    public List<IniDocument.KeyValue> fromStream(InputStream inputStream) {
+        return new IniDocument().fromStream(inputStream).getLines();
     }
 
     public <T> T fromDocument(IniDocument document, Class<T> clazz) {

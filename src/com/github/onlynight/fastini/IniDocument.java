@@ -17,14 +17,14 @@ public class IniDocument {
     private static final String IGNORE_COMMENTS_START = "#";
 
     /**
+     * compat intellij idea comment start
+     */
+    private static final String IGNORE_COMMENTS_IDEA_START = ";";
+
+    /**
      * group tag start
      */
     private static final String IGNORE_TAG_START = "[";
-
-    /**
-     * document path
-     */
-    private String path;
 
     /**
      * the document source line string
@@ -35,8 +35,7 @@ public class IniDocument {
      */
     private List<KeyValue> lines;
 
-    public IniDocument(String path) {
-        this.path = path;
+    public IniDocument() {
         srcLines = new ArrayList<>();
         lines = new ArrayList<>();
     }
@@ -76,13 +75,26 @@ public class IniDocument {
     }
 
     /**
-     * parse document.
-     * after create {@link IniDocument} you should call {@link this#parse()} method to parse the document.
+     * fromPath document.
+     * after create {@link IniDocument} you should call {@link this#fromPath(String)} method to fromPath the document.
      */
-    public IniDocument parse() {
+    public IniDocument fromPath(String path) {
+        try {
+            fromStream(new FileInputStream(new File(path)));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return this;
+    }
+
+    /**
+     * fromPath document.
+     * after create {@link IniDocument} you should call {@link this#fromPath(String)} method to fromPath the document.
+     */
+    public IniDocument fromStream(InputStream inputStream) {
         try {
             BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(new FileInputStream(new File(path)), "utf-8"));
+                    new InputStreamReader(inputStream, "utf-8"));
             String line = null;
             while ((line = reader.readLine()) != null) {
                 srcLines.add(line);
@@ -92,6 +104,11 @@ public class IniDocument {
             for (String srcLine : srcLines) {
                 // 过滤多行注释，单行
                 if (srcLine.contains(IGNORE_COMMENTS_START)) {
+                    continue;
+                }
+
+                // 过滤多行注释，单行
+                if (srcLine.contains(IGNORE_COMMENTS_IDEA_START)) {
                     continue;
                 }
 

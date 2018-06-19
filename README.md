@@ -1,6 +1,8 @@
 FastIni
 =======
 
+中文说明文档 [README_CN.md][1]
+
 # Update
 
 The latest version is 1.0.0, fixed all bugs and IniDocument support #get(String key) method to get the sigle key values.
@@ -219,3 +221,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+[1]: ./doc/cn/README.md
