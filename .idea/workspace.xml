@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="922b4991-892d-4f62-8da7-ebda5cbb5383" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -69,8 +69,8 @@
       <file leaf-file-name="FastIniTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/onlynight/fastini/FastIniTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+            <state relative-caret-position="360">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="143" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#952#953#0" expanded="true" />
@@ -115,8 +115,8 @@
       <file leaf-file-name="IniDocumentTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/onlynight/fastini/IniDocumentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="162">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,11 +124,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="457">
+                <caret line="279" column="7" lean-forward="true" selection-start-line="279" selection-start-column="7" selection-end-line="279" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -137,7 +149,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -341,9 +353,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4588120888462" />
+        <entry key="$PROJECT_DIR$" value="4588121153568" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1686957790" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3934978052" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2799163569" />
       </map>
     </option>
@@ -460,7 +472,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/github/onlynight/fastini/KeyValue.java" />
         <option value="$PROJECT_DIR$/translate_config.ini" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/github/onlynight/fastini/IniDocument.java" />
         <option value="$PROJECT_DIR$/src/com/github/onlynight/fastini/FastIni.java" />
         <option value="$PROJECT_DIR$/gradlew" />
@@ -469,6 +480,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/onlynight/fastini/FastIniTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -505,6 +517,38 @@
             <path>
               <item name="FastIni" type="b2602c69:ProjectViewProjectNode" />
               <item name="FastIni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="FastIni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FastIni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FastIni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FastIni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="FastIni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FastIni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="FastIni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FastIni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FastIni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FastIni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fastini" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -769,7 +813,7 @@
       <workItem from="1529052985821" duration="2215000" />
       <workItem from="1529370951509" duration="1218000" />
       <workItem from="1529372224271" duration="1137000" />
-      <workItem from="1529373367505" duration="1115000" />
+      <workItem from="1529373367505" duration="1726000" />
     </task>
     <task id="LOCAL-00001" summary="fix empty value bus">
       <created>1491931055539</created>
@@ -820,7 +864,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529374396572</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix gradle build bugs">
+      <created>1529374500278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529374500278</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update readme">
+      <created>1529375009013</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529375009013</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -835,7 +893,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15955000" />
+    <option name="totallyTimeSpent" value="16566000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -867,7 +925,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info anchor="bottom" id="Build" weight="0.32936078" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Gradle" visible="true" weight="0.25373134" />
+      <window_info anchor="right" id="Gradle" weight="0.25373134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -894,11 +952,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix empty value bus" />
     <MESSAGE value="fix bugs and update readme doc" />
-    <MESSAGE value="update readme" />
     <MESSAGE value="add intellij idea ini file comment support" />
     <MESSAGE value="add gradle build system" />
     <MESSAGE value="add ignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ignore file" />
+    <MESSAGE value="fix gradle build bugs" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1117,57 +1176,6 @@
     <entry file="file://$PROJECT_DIR$/FastIni.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="201" column="1" lean-forward="true" selection-start-line="192" selection-end-line="201" selection-end-column="1" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="72">
-            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            <folding>
-              <element signature="e#855#856#0" expanded="true" />
-              <element signature="e#898#899#0" expanded="true" />
-              <element signature="e#957#958#0" expanded="true" />
-              <element signature="e#1013#1014#0" expanded="true" />
-              <element signature="e#1059#1060#0" expanded="true" />
-              <element signature="e#1106#1107#0" expanded="true" />
-              <element signature="e#1173#1174#0" expanded="true" />
-              <element signature="e#1237#1238#0" expanded="true" />
-              <element signature="e#1281#1282#0" expanded="true" />
-              <element signature="e#1326#1327#0" expanded="true" />
-              <element signature="e#1389#1390#0" expanded="true" />
-              <element signature="e#1449#1450#0" expanded="true" />
-              <element signature="e#1493#1494#0" expanded="true" />
-              <element signature="e#1538#1539#0" expanded="true" />
-              <element signature="e#1601#1602#0" expanded="true" />
-              <element signature="e#1661#1662#0" expanded="true" />
-              <element signature="e#1709#1710#0" expanded="true" />
-              <element signature="e#1758#1759#0" expanded="true" />
-              <element signature="e#1829#1830#0" expanded="true" />
-              <element signature="e#1897#1898#0" expanded="true" />
-              <element signature="e#1941#1942#0" expanded="true" />
-              <element signature="e#1986#1987#0" expanded="true" />
-              <element signature="e#2049#2050#0" expanded="true" />
-              <element signature="e#2109#2110#0" expanded="true" />
-              <element signature="e#2154#2155#0" expanded="true" />
-              <element signature="e#2200#2201#0" expanded="true" />
-              <element signature="e#2265#2266#0" expanded="true" />
-              <element signature="e#2327#2328#0" expanded="true" />
-              <element signature="e#2373#2374#0" expanded="true" />
-              <element signature="e#2420#2421#0" expanded="true" />
-              <element signature="e#2487#2488#0" expanded="true" />
-              <element signature="e#2551#2552#0" expanded="true" />
-              <element signature="e#2607#2608#0" expanded="true" />
-              <element signature="e#2658#2659#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/onlynight/fastini/build.gradle" />
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -1207,10 +1215,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/onlynight/fastini/FastIniTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+        <state relative-caret-position="360">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="143" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#952#953#0" expanded="true" />
@@ -1253,25 +1275,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/onlynight/fastini/IniDocumentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="162">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="201" column="1" lean-forward="true" selection-start-line="192" selection-end-line="201" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="457">
+            <caret line="279" column="7" lean-forward="true" selection-start-line="279" selection-start-column="7" selection-end-line="279" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
