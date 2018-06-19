@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FastIni.iml" filepath="$PROJECT_DIR$/FastIni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FastIni_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FastIni_main.iml" group="FastIni" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FastIni_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FastIni_test.iml" group="FastIni" />
     </modules>
   </component>
 </project>
