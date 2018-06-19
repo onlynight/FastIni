@@ -5,9 +5,58 @@ FastIni
 
 # Update
 
-The latest version is 1.0.0, fixed all bugs and IniDocument support #get(String key) method to get the sigle key values.
+- add gradle build system
+- add Intellij idea ini file comments support
 
-[download latest 1.0.0 version jar lib file](./bin/fastini-1.0.0.jar)
+# Gradle
+
+To get a Git project into your build:
+
+**Step 1. Add the JitPack repository to your build file**
+
+Add it in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+**Step 2. Add the dependency**
+
+```groovy
+dependencies {
+    implementation 'com.github.onlynight:FastIni:1.2.1'
+}
+```
+
+# Maven
+
+To get a Git project into your build:
+
+**Step 1. Add the JitPack repository to your build file**
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+**Step 2. Add the dependency**
+
+```xml
+<dependency>
+    <groupId>com.github.onlynight</groupId>
+    <artifactId>FastIni</artifactId>
+    <version>1.2.1</version>
+</dependency>
+```
 
 # Introduction
 
